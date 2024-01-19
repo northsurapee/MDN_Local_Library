@@ -12,10 +12,7 @@ const catalogRouter = require("./routes/catalog"); //Import routes for "catalog"
 
 var app = express();
 
-// Enable trust proxy
-app.set('trust proxy', true);
-
-// Set up rate limiter: maximum of twenty requests per minute
+// (Conflict) Set up rate limiter: maximum of twenty requests per minute
 const RateLimit = require("express-rate-limit");
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
@@ -24,7 +21,7 @@ const limiter = RateLimit({
 // Apply rate limiter to all requests
 app.use(limiter);
 
-// Add helmet to the middleware chain.
+// (Conflict) Add helmet to the middleware chain.
 // Set CSP headers to allow our Bootstrap and Jquery to be served
 app.use(
   helmet.contentSecurityPolicy({
