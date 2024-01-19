@@ -1,6 +1,6 @@
 # MDN_Local_Library
 
-- Local Library website written in in Node/Express.
+- My initial Node/Express project: 'Local Library' website!
 - This web application creates an online catalog for a small local library, where users can browse available books and manage their accounts.
 - Live demo : https://mdn-local-library.onrender.com
 
