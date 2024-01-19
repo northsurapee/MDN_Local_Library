@@ -2,7 +2,7 @@
 
 - Local Library website written in in Node/Express.
 - This web application creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-- Live deme : https://organic-puzzled-throat.glitch.me
+- Live demo : https://mdn-local-library.onrender.com
 
 ## UML Diagram
 A UML diagram showing the relation of local library database entities hosted on MongoDB Atlas.
